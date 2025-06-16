@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* Element Selector */
+        div{
+            background-color: red;
+        }
+        /* Class Selector */
+        .red{
+            background-color: red;
+
+        }
+        /* Id Selector */
+        #green{
+            background-color: green;
+        }
+
+        /* Child Selector */
+        div > p{
+            background-color: rgb(245, 97, 122);
+            color: aqua;
+        }
+
+        /* Descendent Selector */
+        div p{
+            background-color: brown;
+            color: blue;
+        }
+        /* Universal Selector */
+        *{
+            margin: 1;
+            padding: 1;
+        }
+        /* Pseudo Selector */
+        a:visited{
+            color: rgb(0, 60, 255);
+        }
+        a:link{
+            color: #91db23;
+        }
+        a:active{
+            background-color: rgb(0, 200, 236);
+        }
+        a:hover{
+            background-color: rgb(205, 50, 171);
+        }
+        p:first-child{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am first </p>
+        <p>I am second</p>
+
+    </main>
+    <div class="red">
+        I am div
+    </div>
+
+    <div>
+        <article>
+
+            <p>I am a para inside div</p>
+        </article>
+    </div>
+    <div id="green">
+        I a sachin i am here in div
+    </div>
+
+    <a href="https://www.google.com"> Go to Google</a>
+    <a href="https://www.linkedin\.com"> Go to linkedin</a>
+</body>
+</html>
